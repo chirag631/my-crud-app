@@ -1,0 +1,9 @@
+.typography{
+    text-align:center;
+    font-size:1rem;
+}
+@media only screen and (max-width: 768px) {
+    .typography {
+      font-size: 0.5rem;
+    }
+  }

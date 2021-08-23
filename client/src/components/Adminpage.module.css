@@ -1,0 +1,93 @@
+.card {
+   width:max-content;
+    padding: 1rem;
+    margin: 0 auto ;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: white;
+    
+    max-width: 100%;
+  }
+  
+
+
+.table {
+    
+    display: block;
+    margin:0 ;
+    overflow-y: scroll;
+    max-height:300px;
+    
+  }
+  
+  .table tr:nth-child(odd){
+    background-color: #ddd;
+  }
+  .table tr:first-child{
+    border-bottom:1px solid #000;
+    background-color: #3498db;
+    color:#fff;
+    
+  }
+  .table tr{
+        display: flexbox;
+      flex-direction: row;
+      justify-content: space-between;
+     
+  }
+  .table tr th,
+  .table tr td {
+    width:max-content;
+    padding:1rem 0.5rem;
+    text-align:left;
+   
+  }
+
+  .editbtn button {
+    border-radius: 5px;
+    border:1px solid #3498db;
+    padding:0.3rem 1.5rem;
+    font-size: 1.25rem;
+    color:#fff;
+    background-color: #3498db;
+    
+}
+
+.editbtn button:hover{
+  border:1px solid #1f74ac;
+  background-color: #1f74ac;
+}
+
+.delbtn button {
+    border-radius: 5px;
+    border:1px solid #e74c3c;
+    padding:0.3rem 1.5rem;
+    font-size: 1.25rem;
+    color:#fff;
+    background-color: #e74c3c;
+    
+}
+
+.delbtn button:hover{
+  border:1px solid #c72918;
+  background-color: #c72918;
+}
+
+  @media only screen and (max-width: 1048px) {
+    .table tr th,.table tr td{
+        font-size: 0.5rem;
+        padding:0.3rem;
+        max-height: 300px;
+    }
+    .card {
+        
+        margin:0 auto;
+        font-size: 0.5rem;
+      }
+      .editbtn button, .delbtn button{
+          font-size: 0.5rem;
+          padding:0.1rem 0.3rem;
+      }
+  }
+
+  

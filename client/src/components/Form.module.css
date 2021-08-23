@@ -1,0 +1,113 @@
+.form {
+    position: relative;
+  }
+  
+  .loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .control {
+    margin-bottom: 0.5rem;
+  }
+  
+  .control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .control input,
+  .control textarea {
+    font: inherit;
+    padding: 0.35rem;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    border: 1px solid #c1d1d1;
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  
+  .control input:focus,
+  .control textarea:focus {
+    background-color: #d3e6f3;
+    outline-color: #3498db;
+  }
+  
+  .actions {
+      margin-top: 2rem;
+    text-align: center;
+    outline: none;
+    border:0px;
+  }
+  
+  .actions button {
+      border-radius: 5px;
+      border:1px solid #3498db;
+      padding:0.5rem 1rem;
+      font-size: 1.25rem;
+      color:#fff;
+      background-color: #3498db;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+}
+
+.actions button:hover{
+    border:1px solid #1f74ac;
+    background-color: #1f74ac;
+}
+
+.actions_delete{
+  margin-top: 2rem;
+  text-align: center;
+  outline: none;
+  border:0px;
+}
+.actions_delete button{
+  background-color: #e74c3c;
+  border-radius: 5px;
+      border:1px solid #e74c3c;
+      padding:0.5rem 1rem;
+      font-size: 1.25rem;
+      
+}
+
+.actions_delete button:hover{
+  border:1px solid #c72918;
+  background-color: #c72918;
+}
+
+@media only screen and (max-width: 768px) {
+  .control input,
+  .control textarea {
+    font-size: 0.5rem;
+  }
+  .control label {
+    font-size: 0.5rem;
+  }
+
+  .actions {
+    margin-top: 0.5rem;
+}
+
+.actions button {
+    font-size: 0.5rem;
+}
+
+.actions_delete{
+  margin-top: 0.5rem;
+}
+.actions_delete button{
+    font-size: 0.5rem;  
+}  
+
+}
+
